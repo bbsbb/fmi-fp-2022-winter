@@ -136,9 +136,9 @@
     [else #f]))
 
 (define (is-square? mat)
-  (for-all mat (lambda (row) (= (length row)
+  (for-all? mat (lambda (row) (= (length row)
                                 (length mat)))))
-(is-square? (list (list 1 2) (list 3 4)))
+;;(is-square? (list (list 1 2) (list 3 4)))
 
 
 ;; Task 6: Given a matrix and a number, return all coordinates of the occurances of the number in the matrix
@@ -171,4 +171,3 @@
 ;;                                    (list 3 4 5)
 ;;                                    (list 3 3 2))
 ;;                               3)
-
